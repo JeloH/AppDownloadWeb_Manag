@@ -1,0 +1,700 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_mehman.master.cs" Inherits="MasterPage_mehman" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   
+   
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- made by www.metatags.org -->
+<meta name="description" content="دانلود برنامه موبایل,دانلود نرم افزار موبایل,برنامه آندروید,برنامه جاوا,همراه بانک,برنامه کاربردی موبایل,معرفی نرم افزار موبایل,برنامه مذهبی,بازی موبایل,دانلود بازی" />
+<meta name="keywords" content="دانلود رایگان,برنامه موبایل,نرم افزار موبایل,برنامه کاربردی,برنامه مذهبی,برنامه بانک,برنامه,دیکشنری موبایل,دانلود موبایل" />
+<meta name="author" content="metatags generator">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 month">
+<title> Mobile Application | 移动应用 | Android | iPhone</title>
+
+
+   
+<!--  -->
+
+<!--  -->
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+                        
+   body 
+{
+    font-family:Tahoma;
+    font-size:12px;
+  
+
+}
+     
+        
+        .style1
+        {
+            width: 1010px;
+            height:7px;
+            background-color:#FFFF99
+        }
+             
+        
+         .style36
+        {
+            width: 880px;
+        }
+        
+         .style12
+        {
+            height: 18px;
+        }
+             
+        
+         .style35
+        {
+          width: 206px;
+        }
+                
+                
+        .style16
+        {
+            width: 100%;
+        }
+     
+        
+        .style37
+        {
+            height: 16px;
+        }
+     
+        
+        </style>
+</head>
+
+
+
+ 
+<body   style="background-color:#FCFCB2; background-image:url(../img/bg2.png);  background-repeat: repeat-x;">
+    <form id="form1" runat="server">
+    <table align="center" class="style36" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+    <table align="center" class="style1" cellpadding="0" cellspacing="0" bgcolor="#FFFF99" ">
+        <tr bgcolor="#FFFF99">
+            <td colspan="33">
+                <img src="img/heder5_55.jpg" height="205" width="100%" /></td>
+        </tr>
+        <tr valign="top" align="center" dir="rtl">
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#FDFE1E">
+                &nbsp;&nbsp; &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#F3FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#E9FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#DFFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#D5FE1E">
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#CBFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#C1FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#ADFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#A3FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#99FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#8FFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#85FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#7BFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#71FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#67FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#71FE1E">
+                &nbsp;<asp:HyperLink ID="HyperLink13" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Search_Softwear_Mobile.aspx">购物</asp:HyperLink>
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#7BFE1E">
+                &nbsp;&nbsp;<asp:HyperLink ID="HyperLink10" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Search_Softwear_Mobile.aspx">搜寻</asp:HyperLink>
+            </td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#85FE1E">
+                &nbsp;<asp:HyperLink ID="HyperLink9" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/TamasBaMa.aspx">联系我们</asp:HyperLink>
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#8FFE1E">
+                &nbsp;<asp:HyperLink ID="HyperLink11" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/DarbareMa.aspx">关于我们</asp:HyperLink>
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#67FE1E">
+                &nbsp;<asp:HyperLink ID="HyperLink12" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Ahdaf.aspx">目标</asp:HyperLink>
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#99FE1E">
+                &nbsp;&nbsp;<asp:HyperLink ID="HyperLink7" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Default.aspx">主页</asp:HyperLink>
+            </td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#67FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#A3FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#67FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#ADFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#B7FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#C1FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#CBFE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#DFFE1E">
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#E9FE1E">
+                &nbsp;&nbsp; &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#F3FE1E">
+                &nbsp;&nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#FDFE1E">
+                &nbsp;</td>
+            <td 
+                style="background-image:url(../img/h13.png); background-position: right" 
+                valign="top" bgcolor="#FDFE1E">
+                &nbsp;</td>
+        </tr>
+        </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+    <table   align="right" dir="rtl" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="style3"align="center" dir="rtl" valign="top" bgcolor="#FFFF99">
+                
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Android App</td>
+                    </tr>
+                    <tr>
+                        <td align="center" dir="ltr">
+                            <asp:DataList ID="DataList4" runat="server" 
+                                DataSourceID="SqlDataSource4">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink19" runat="server" 
+    Text='<%# Eval("subject_post") %>'
+
+        NavigateUrl='<%# String.Format("ListSoftware.aspx?subject_post={0}&type={1}", Eval("subject_post"), Eval("type")) %>' 
+
+
+
+
+
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource4" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                SelectCommand="SELECT Distinct  [subject_post],[type] FROM [demah].[send_softwear] where [type]='android' ">
+                            </asp:SqlDataSource>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            IOS App</td>
+                    </tr>
+
+
+
+        <tr>
+                        <td align="center" dir="ltr">
+                            <asp:DataList ID="DataList5" runat="server" 
+                                DataSourceID="SqlDataSource5">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink39" runat="server" 
+    Text='<%# Eval("subject_post") %>'
+
+        NavigateUrl='<%# String.Format("ListSoftware.aspx?subject_post={0}&type={1}", Eval("subject_post"), Eval("type")) %>' 
+
+
+
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource5" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                SelectCommand="SELECT Distinct  [subject_post],[type] FROM [demah].[send_softwear] where [type]='iphone' ">
+                            </asp:SqlDataSource>
+                            
+                        </td>
+                    </tr>
+
+
+
+
+
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            win App</td>
+                    </tr>
+                    <tr>
+                        <td align="center" dir="ltr">
+                            <asp:DataList ID="DataList6" runat="server"  
+                                DataSourceID="SqlDataSource6">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink20" runat="server" 
+                                       Text='<%# Eval("subject_post") %>' 
+
+        NavigateUrl='<%# String.Format("ListSoftware.aspx?subject_post={0}&type={1}", Eval("subject_post"), Eval("type")) %>' 
+
+
+
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource6" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>"                                
+          
+                                 
+                                SelectCommand="SELECT Distinct  [subject_post],[type] FROM [demah].[send_softwear] where [type]='bada'">
+
+                            </asp:SqlDataSource>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Java App</td>
+                    </tr>
+                    <tr>
+
+
+
+
+
+
+
+                        <td align="center" dir="ltr">
+                            <asp:DataList ID="DataList3" runat="server" 
+                                DataSourceID="SqlDataSource3">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink17" runat="server" 
+    Text='<%# Eval("subject_post") %>' 
+
+
+        NavigateUrl='<%# String.Format("ListSoftware.aspx?subject_post={0}&type={1}", Eval("subject_post"), Eval("type")) %>' 
+
+
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                
+                                SelectCommand="SELECT Distinct  [subject_post],[type] FROM [demah].[send_softwear] where [type]='java' ">
+                            </asp:SqlDataSource>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Pubic News</td>
+                    </tr>
+                    <tr>
+                        <td align="center" dir="rtl">
+                            <asp:DataList ID="DataList9" runat="server" 
+                                DataSourceID="SqlDataSource9" CellPadding="4">
+                                <ItemTemplate>
+                            <asp:HyperLink ID="HyperLink21" runat="server" 
+                                       Text='<%# Eval("title") %>' 
+
+        NavigateUrl='<%# String.Format("View_barg.aspx?page={0}&type={1}", Eval("code_post"), Eval("type_post")) %>' 
+
+
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource9" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>"                                
+          
+                                 
+                                
+                                SelectCommand="SELECT top 20 [code_post],[title],[type_Post] FROM  [mataleb] where [type_Post]='oumumi' order by [code_post] DESC">
+
+
+                            </asp:SqlDataSource>
+                            </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style37" dir="rtl">
+                            count of visits:</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="ltr">
+
+<!-- 
+
+                            تعداد بازدید:&nbsp; 
+                             
+                            <br />
+                            تعداد افراد آنلاین:
+                             
+                            <br />
+
+-->
+
+
+<!-- PersianStat -->
+<!-- URL: http://www.irvb.ir -->
+<script language='javascript' type='text/javascript' src='http://www.persianstat.com/service/stat.js'></script>
+<script language='javascript' type='text/javascript'>
+    persianstat(10184604, 0);
+</script>
+<!-- /PersianStat -->
+
+
+
+
+
+
+
+
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Today :</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            date:&nbsp; 
+                            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            Time:
+                            <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                            <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </td>
+            <td class="style3" dir="rtl" valign="top" width="100%" rowspan="2" 
+                bgcolor="#FFFF99" align="center">
+                <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td class="style3" dir="ltr" valign="top" bgcolor="#FFFF99">
+              
+
+
+                <table bgcolor="#F9F988" dir="rtl" class="style35">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style35" dir="rtl">
+                            Most Viewed </td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="ltr">
+                            <asp:DataList ID="DataList8" runat="server" DataKeyField="code_post" 
+                                DataSourceID="SqlDataSource8">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink22" runat="server" 
+    Font-Underline="False" 
+    NavigateUrl='<%# Eval("code_post", "ViewSoftware.aspx?page={0}") %>' 
+    Text='<%# Eval("title") %>'></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource8" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                SelectCommand="SELECT top 20 [code_post], [title] FROM [demah].[send_softwear] order by [View_Count] DESC">
+
+
+
+
+                            </asp:SqlDataSource>
+                            </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 200px" class="style35">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Most Downloaded </td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="ltr">
+                            <asp:DataList ID="DataList10" runat="server" DataKeyField="code_post" 
+                                DataSourceID="SqlDataSource2">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink18" runat="server" 
+    Font-Underline="False" 
+    NavigateUrl='<%# Eval("code_post", "ViewSoftware.aspx?page={0}") %>' 
+    Text='<%# Eval("title") %>'></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                SelectCommand="SELECT top 20 [code_post], [title] FROM [demah].[send_softwear] order by [download_count] DESC">
+                              
+
+                            </asp:SqlDataSource>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+              
+
+
+                <table class="style35" bgcolor="#F9F988" dir="ltr"  >
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Hot Apps</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="ltr">
+                            <asp:DataList ID="DataList7" runat="server" DataKeyField="code_post" 
+                                DataSourceID="SqlDataSource7">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink15" runat="server" 
+    Font-Underline="False" 
+    NavigateUrl='<%# Eval("code_post", "ViewSoftware.aspx?page={0}") %>' 
+    Text='<%# Eval("title") %>'></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource7" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                SelectCommand="SELECT top 20 [code_post], [title] FROM  [demah].[send_softwear]  order by [code_post] DESC">
+
+
+
+
+
+                            </asp:SqlDataSource>
+                           
+
+
+                        </td>
+                    </tr>
+                </table>
+                <br />
+
+
+
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px" class="style35">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style35" dir="rtl">
+                            Your vote: </td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                           
+
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                                DataKeyNames="code" DataSourceID="SqlDataSource10" Width="22px" 
+                                GridLines="None">
+                                <Columns>
+                                    <asp:TemplateField>
+                                        <ItemTemplate>
+                                            <table class="style16">
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label ID="Label5" runat="server" Height="30px" 
+                                                            Text='<%# Eval("question") %>' Width="193px"></asp:Label>
+
+                                                        <br />
+                                                        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="g4" 
+                                                            Text='<%# Eval("a_text") %>' />
+                                                        <br />
+                                                        <asp:RadioButton ID="RadioButton2" runat="server" GroupName="g4" 
+                                                            Text='<%# Eval("b_text") %>' />
+                                                        <br />
+                                                        <asp:RadioButton ID="RadioButton3" runat="server" GroupName="g4" 
+                                                            Text='<%# Eval("c_text") %>' />
+                                                        <br />
+                                                        <asp:RadioButton ID="RadioButton4" runat="server" GroupName="g4" 
+                                                            Text='<%# Eval("d_text") %>' />
+                                                        <br />
+                                                        <br />
+                                                        <asp:Button ID="Button1" runat="server" Height="19px" onclick="Button1_Click" 
+                                                            Text="Subnit" Width="48px" />
+                                                        &nbsp;
+                                                        <asp:Label ID="Label6" runat="server" ForeColor="#F9F988" 
+                                                            Text='<%# Eval("code") %>'></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br />
+
+
+
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px" class="style35">
+                    <tr>
+                        <td  class="style35" dir="rtl">
+                             </td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                           
+ 
+
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
+                            </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSource10" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                SelectCommand="SELECT top 1 * FROM [nazarsanji] where [enable]='True' "></asp:SqlDataSource>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#99FF66" colspan="3" dir="rtl" valign="top">
+
+                کپی کردن از مطالب سایت همراه با ذکر منبع هیچ مانعی ندارد</td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

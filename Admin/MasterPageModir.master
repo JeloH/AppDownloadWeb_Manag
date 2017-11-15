@@ -1,0 +1,290 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageModir.master.cs" Inherits="Admin_MasterPageModir" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            width: 820px;
+            height:1024px;
+            background-color: #FFFFCC;
+        }
+        .style2
+        {
+            height: 201px;
+        }
+        .style12
+        {
+            height: 18px;
+        }
+        .style13
+        {
+            width: 100%;
+            background-color: #F5F8B6;
+        }
+        .style14
+        {
+            width: 5px;
+        }
+        
+         body 
+          {
+           font-family:Tahoma;
+           font-size:12px;
+
+          }
+
+        .style15
+        {
+            width: 5px;
+            height: 18px;
+        }
+
+        </style>
+</head>
+
+
+ 
+ 
+<body>
+    <form id="form1" runat="server">
+    <table align="center" class="style1" dir="rtl" cellpadding="0" cellspacing="0" 
+        style="border: 1px solid #FF9933;">
+        <tr>
+            <td class="style2" colspan="3" dir="rtl" valign="top" bgcolor="Yellow">
+                <img src="../img/heder5_55.jpg" height="205" width="100%" /></td>
+        </tr>
+        
+        <tr>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                <table bgcolor="#F9F988" dir="rtl" style="width: 100%">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Data management site</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:Menu ID="Menu2" runat="server">
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/Default.aspx" Text="主页网站" 
+                                        Value="صفحه اصلی سایت"></asp:MenuItem>
+
+  <asp:MenuItem NavigateUrl="~/Admin/send_post.aspx" Text="提交新闻" 
+                                        Value="ارسال مطلب"></asp:MenuItem>
+
+
+    <asp:MenuItem NavigateUrl="~/Admin/Edit_Mataleb.aspx" Text="Edit news" 
+                                        Value="ویرایش مطالب"></asp:MenuItem>
+
+<asp:MenuItem Text="Edit comments" Value="ویرایش نظر سنجی" NavigateUrl="~/Admin/NazarSanji_Edit.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="New Poll..." Value="ایجاد نظر سنجی" 
+                                        NavigateUrl="~/Admin/NazarSanji_Create.aspx"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 100%">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Report</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:Menu ID="Menu3" runat="server">
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/Admin/GetInfoUser.aspx" Text="Get information IP from visitors" 
+                                        Value="تمام ورودها"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Management of software</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:Menu ID="Menu4" runat="server" >
+                                <Items>
+                                    <asp:MenuItem Text="Upload App - 上传应用" Value="upload App - 上传应用" 
+                                        NavigateUrl="~/Admin/Upload_soft.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Submit a software - 提交软件" Value="Submit a software - 提交软件" 
+                                        NavigateUrl="~/Admin/Send_Softwear.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Edit a software - 编辑软件" Value="Edit a software - 编辑软件" 
+                                        NavigateUrl="~/Admin/Edit_Softwear.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="List of software - 软件列表" Value="List of software - 软件列表" 
+                                        NavigateUrl="~/Admin/ListSoftwear.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="list of user comment - 用户评论列表" Value="list of user comment - 用户评论列表" 
+                                        NavigateUrl="~/Admin/CommentsPost.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Upload pic - 上传图片" Value="Upload pic - 上传图片" 
+                                        NavigateUrl="~/Admin/Upolad_img.aspx">
+                                    </asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            setting </td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:Menu ID="Menu5" runat="server">
+                            </asp:Menu>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style3" dir="rtl" valign="top" width="100%" rowspan="2" 
+                style="border: 1px solid #FFB062;" bgcolor="#EEF4C0">
+                <table class="style13">
+                    <tr>
+                        <td class="style14">
+                            &nbsp;</td>
+                        <td align="center">
+                Admin Panel</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style14">
+                            &nbsp;</td>
+                        <td width="100%" align="center">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style15">
+                            </td>
+                        <td class="style12">
+                            </td>
+                        <td class="style12">
+                            </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Managment</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <br />
+                            ID User :<br />
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            آlast 
+                            login :<br />
+                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <br />
+                            <asp:Button ID="Button1" runat="server" Text="sing out" onclick="Button1_Click" 
+                                style="height: 26px" />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            calender</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style3" dir="rtl" valign="top" bgcolo&nbsp;</td bgcolor="#FFFF99">
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#99FF66" colspan="3" dir="rtl" valign="top">
+                &nbsp;C © 2017 Irb.ir</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

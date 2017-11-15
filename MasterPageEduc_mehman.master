@@ -1,0 +1,474 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageEduc_mehman.master.cs" Inherits="MasterPageEduc_mehman" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+                        
+   body 
+{
+    font-family:Tahoma;
+    font-size:12px;
+  
+
+}
+     
+        
+        .style1
+        {
+            width: 880px;
+            height:1024px;
+            background-color:White
+        }
+             
+        
+        .style15
+        {
+            width: 93px;
+        }
+     
+        
+        .style4
+        {
+            width: 88px;
+        }  
+        
+         .style12
+        {
+            height: 18px;
+        }
+             
+        
+        .style14
+        {
+            height: 8px;
+        }
+     
+        
+         .style36
+        {
+            width: 880px;
+            height: 191px;
+        }
+     
+        
+        </style>
+</head>
+
+
+
+ 
+<body   style="background-image: url('/irvb_WebSite1/img/Untitled-6.jpg');  background-repeat: repeat-x;">
+    <form id="form1" runat="server">
+    <table align="center" class="style1" cellpadding="0" cellspacing="0" style="border: 1px solid #FF9933;">
+        <tr>
+            <td colspan="0">
+                <img class="style36" src="img/heder2.jpg" /></td>
+        </tr>
+        <tr>
+            <td colspan="0">
+    <table align="center"  dir="rtl" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="3" dir="rtl" valign="top" 
+                
+                style="background-image: url('http://localhost:1032/irvb_WebSite_1/img/h13.png'); background-position: right" 
+                rowspan="0">
+                <table align="center" dir="rtl" style="width: 397px; height: 20px;">
+                    <tr>
+                        <td align="center" class="style15">
+                            <asp:HyperLink ID="HyperLink7" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Default.aspx">主页</asp:HyperLink>
+                        </td>
+                        <td align="center">
+                            <asp:HyperLink ID="HyperLink12" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Ahdaf.aspx">目标</asp:HyperLink>
+                        </td>
+                        <td align="center" class="style4">
+                            <asp:HyperLink ID="HyperLink11" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/DarbareMa.aspx">关于我们</asp:HyperLink>
+                        </td>
+                        <td align="center" class="style4">
+                            <asp:HyperLink ID="HyperLink9" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/TamasBaMa.aspx">联系我们</asp:HyperLink>
+                        </td>
+                        <td align="center">
+                            <asp:HyperLink ID="HyperLink10" runat="server" Font-Underline="False" 
+                                NavigateUrl="~/Search_Softwear_Mobile.aspx">搜寻</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            软件新闻</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                         
+                            <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource1" 
+                                Font-Underline="False">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink16" runat="server" 
+    NavigateUrl='<%# Eval("subject_post","ListEducPost.aspx?page={0}") %>' 
+    Text='<%# Eval("subject_post") %>' Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                SelectCommand="SELECT Distinct  [subject_post] FROM [send_softwear] where [type]='Educ' ">
+                            </asp:SqlDataSource>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                          Java软件</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:DataList ID="DataList3" runat="server" 
+                                DataSourceID="SqlDataSource3">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink17" runat="server" 
+    Text='<%# Eval("subject_post") %>' NavigateUrl='<%# Eval("subject_post","ListSoftwear.aspx?page={0}") %>' 
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                
+                                SelectCommand="SELECT Distinct  [subject_post] FROM [send_softwear] where [type]='java' ">
+                            </asp:SqlDataSource>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            Android软件</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:DataList ID="DataList4" runat="server" 
+                                DataSourceID="SqlDataSource4">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink19" runat="server" 
+    Text='<%# Eval("subject_post") %>' NavigateUrl='<%# Eval("subject_post","ListSoftwear.aspx?page={0}") %>' 
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource4" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                
+                                SelectCommand="SELECT Distinct  [subject_post] FROM [send_softwear] where [type]='android' ">
+                            </asp:SqlDataSource>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            IOS 软件</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:DataList ID="DataList5" runat="server"  
+                                DataSourceID="SqlDataSource5">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink14" runat="server" 
+                                       Text='<%# Eval("subject_post") %>' 
+                                       NavigateUrl='<%# Eval("subject_post","ListSoftwear.aspx?page={0}") %>' 
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource5" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>"                                
+          
+                                 SelectCommand="SELECT Distinct  [subject_post] FROM [send_softwear] where [type]='iphone' ">
+
+                            </asp:SqlDataSource>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            نرم افزار های بادا</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:DataList ID="DataList6" runat="server"  
+                                DataSourceID="SqlDataSource6">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink20" runat="server" 
+                                       Text='<%# Eval("subject_post") %>' 
+                                       NavigateUrl='<%# Eval("subject_post","ListSoftwear.aspx?page={0}") %>' 
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource6" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>"                                
+          
+                                 
+                                SelectCommand="SELECT Distinct  [subject_post] FROM [send_softwear] where [type]='bada' ">
+
+                            </asp:SqlDataSource>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            عمومی</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            <asp:DataList ID="DataList9" runat="server" 
+                                DataSourceID="SqlDataSource9">
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink21" runat="server" 
+                                       Text='<%# Eval("subject_post") %>' 
+                                       NavigateUrl='<%# Eval("subject_post","ListSoftwear.aspx?page={0}") %>' 
+                                        Font-Underline="False"></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource9" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>"                                
+          
+                                 
+                                
+                                SelectCommand="SELECT Distinct  [subject_post] FROM [send_softwear] where [type]='oumumi' ">
+
+                            </asp:SqlDataSource>
+                            </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            آمار بازدیدها</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            تعداد بازدید:&nbsp; 
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            تعداد افراد آنلاین:
+                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table bgcolor="#F9F988" dir="rtl" style="width: 142px">
+                    <tr>
+                        <td bgcolor="#E9BE12" class="style12" dir="rtl">
+                            今日日期：</td>
+                    </tr>
+                    <tr>
+                        <td align="right" dir="rtl">
+                            日期： 
+                            <br />
+&nbsp;:&nbsp; 
+                            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <br />
+                            时间 ： 
+                            <br />
+&nbsp;<asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <br />
+                            <br />
+                            
+                            
+                            
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </td>
+            <td class="style3" dir="rtl" valign="top" width="100%" rowspan="2" 
+                bgcolor="#FFFF99">
+                <table>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style14">
+                            &nbsp;</td>
+                        <td width="100%" align="center" bgcolor="#FFFFA6">
+                <table>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style14">
+                            &nbsp;</td>
+                        <td width="100%" align="center" bgcolor="#FFFFB7">
+                <table>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style14">
+                            &nbsp;</td>
+                        <td width="100%" align="center" bgcolor="#FFFFC1">
+                <table>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style14">
+                            &nbsp;</td>
+                        <td width="100%" align="center" bgcolor="#FFFFC4">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                <p align="center">
+                                </p>
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td class="style14">
+                            &nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+                        </td>
+                        <td class="style14">
+                            &nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+                        </td>
+                        <td class="style14">
+                            &nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+                            <br />
+                        </td>
+                        <td class="style14">
+                            &nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style3" dir="rtl" valign="top" bgcolor="#FFFF99">
+                
+
+
+   
+
+                
+                
+                
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#99FF66" colspan="3" dir="rtl" valign="top">
+                تمام حقوق این سایت محفوظ می باشد.</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#4C9D49" colspan="3" dir="rtl" valign="top">
+                                            
+                            <a href="http://www.tinycounter.com" target="_blank" title="hit counter">
+                            <img border="0" alt="hit counter" 
+                                src="http://mycounter.tinycounter.com/index.php?user=1391" 
+                                style="height: 28px; width: 239px"></a>&nbsp;</td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
